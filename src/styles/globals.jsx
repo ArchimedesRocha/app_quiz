@@ -1,5 +1,6 @@
 // GlobalStyle.js
 import { createGlobalStyle } from "styled-components";
+import "@mdi/font/css/materialdesignicons.min.css";
 
 const GlobalStyle = createGlobalStyle`
 /* CSS Variables */
@@ -7,6 +8,7 @@ const GlobalStyle = createGlobalStyle`
 // Text Default Collor
 --color-text-default: rgba(225, 222, 245, .9);
 --color-text-primary: rgba(225, 222, 245, .7);
+--color-text-secondary: rgba(225, 222, 245, .5);
 
 /* Color's Pallet Others*/
 --color-white: #ffffff;
@@ -44,6 +46,7 @@ const GlobalStyle = createGlobalStyle`
 --color-blue-675: #18264A;
 --color-blue-680: #2F3349;
 --color-blue-700: #25293C;
+--color-blue-750: #1e2130;
 --color-blue: #4F88CC;
 
 /* Color's Pallet Purple */
@@ -137,6 +140,16 @@ a {
   max-width: 132rem;
   margin: 0 auto;
   padding: 0 1.6rem;
+}
+.container-center {
+  width: 100%;
+  max-width: 132rem;
+  margin: 0 auto;
+  padding: 0 1.6rem;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .container-full {
